@@ -8,7 +8,7 @@ import '../container.css';
 import "animate.css";
 import '../Intropage.css';
 import fdias from '../images/icons/02d.svg';
-import arrow from '../images/icons/down-arrow.svg';
+
 
 
 export default function Cards({cities, onClose}) {
