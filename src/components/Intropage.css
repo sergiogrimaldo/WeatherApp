@@ -1,0 +1,21 @@
+
+
+.intropage{
+    display: flex;
+    flex-flow: column;
+    max-width: 1fr;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.intromsg{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.1em;  
+
+    background: linear-gradient(0deg, #41c3da, rgba(54, 140, 169, 1));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

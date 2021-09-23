@@ -1,0 +1,165 @@
+.card {
+  margin: 20px;
+  width: 229px;
+  height: 277px;
+  border-radius: 20px 20px 20px 20px;
+  display: grid;
+  grid-template-columns: [x0] 20px [x1] 1fr [x2] 20px [x3];
+  grid-template-rows: [y0] 30px [y1] 140px [y2] 40px [y3] 70px [y4] 1fr [y5];
+  /* background-color: rgba(43, 38, 58, 1); */
+  box-shadow: 8px 8px 26px 0px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 8px 8px 26px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 8px 8px 26px 0px rgba(0,0,0,0.55);
+}
+
+.encabezado{
+  grid-column: x0 / x3;
+  grid-row: y0 / y1;
+  display: flex;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: [x0] 20px [x1] 1fr [x2] 20px [x3];
+  grid-template-rows: [y0] 30px [y1]
+}
+
+.card-title {
+  z-index: 1;
+  margin-top: 15px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s linear;
+  grid-column: x1 / x2 ;
+  
+}
+.card-title.hoverr{
+  transform: scale(1.2);
+  filter: invert(5%) brightness(115%);
+}
+
+#closeIcon {
+  z-index: 2;
+  margin-right: 3px;
+  margin-top: 3px;
+  order: 1;
+  align-self: flex-start;
+  grid-column: x2 / x3;
+ position: absolute;
+ right: 0px;
+}
+
+
+.card-body {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+.info {
+  display: flex; 
+  flex-flow: row nowrap;
+  justify-content: space-around; 
+  align-items: flex-end;
+  grid-column: x0 / x3;
+  grid-row: y3 / y4;
+  align-self: center;
+}
+
+.temp {
+  font-family:'Bebas Neue', cursive;
+  font-size: 45px;
+  position: absolute;
+  left: 74px;
+  bottom: 42px;
+}
+
+.temperatura {
+  grid-column: x1 / x2;
+  grid-row: y2 / y3;
+  align-self: center
+}
+
+
+.espac{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 0mm;
+}
+
+.infoinfo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.textoinfo {
+  font-size: 12px;
+}
+
+.icono{
+  grid-column: x1 / x2;
+  grid-row: y0 / y2; 
+  align-self: flex-end;
+}
+.iconoClima{
+  max-width: 180px;
+}
+
+
+@media screen and (max-width: 768px){
+  .card {
+    margin: 20px;
+    width: 358px;
+    height: 205px;
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 20px [x2];
+    grid-template-rows: [y0] 30px [y1] 1fr [y2] 60px [y3];
+    
+  } 
+  .icono{
+    grid-column: x0 / x1;
+    grid-row: y0 / y2; 
+    position: absolute;
+    top: 8%;
+    left: 6%;
+  }
+ .iconoClima{
+  max-width: 175px;
+ }
+
+  .encabezado{
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: x0 / x1;
+  }
+
+  .card-title {
+    z-index: 1;
+    margin-top: 15px;
+    font-size: 24px;
+    grid-column: x1 / x2 ;
+    align-self: center;
+    margin-left: 5% ;
+  }
+
+  .temp {
+    font-family:'Bebas Neue', cursive;
+    font-size: 50px;
+    position: absolute;
+    left: 65%;
+    bottom: 28%;
+  }
+  .temperatura {
+    grid-column: x0 / x1;
+    grid-row: y1 / y2;
+    align-self: center
+  }
+
+  .infoinfo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  .textoinfo {
+    font-size: 14px;
+  }
+}

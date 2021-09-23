@@ -1,0 +1,173 @@
+
+.exit{
+    border: none;
+    background: none;
+    outline: none;
+    position: absolute;
+    left: 2%;
+    margin-top: 8%;
+    display: flex;
+    flex-flow: row;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: black;
+}
+
+
+.fast{
+margin-right: 5%;
+}
+.bklink{
+    position: fixed;
+    margin-left: 2%;
+    top: 0%;
+    margin-top: 3.5%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.middle{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.front, .back{
+ overflow: hidden;
+ backface-visibility: hidden;
+ transition: .6s linear;
+ position: absolute;  
+ top: 5%;
+ 
+}
+@keyframes slideUp {
+    from {
+    opacity: 0;
+    transform: translateY(1rem);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
+.front{
+    transform: perspective(600px) rotateY(0deg);
+    cursor: pointer;
+    animation-duration: .6s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+    animation-name: slideUp;
+}
+
+.back{
+    cursor: pointer;
+    height: 520px;
+    width: 358px;
+    margin: 20px;
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 8px 8px 24px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(0,0,0,0.55);
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.front.rotate{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.back.rotate{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.cityplus{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+.infoinfocity {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+.textoinfocity {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    margin-right: 5px;
+}
+
+.infoplus{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    margin-left: 24px;
+    
+}
+
+.otrosDatos{
+   position: absolute;
+   bottom: 0px;
+}
+
+.infoinfoplus {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+  }
+  
+.textoinfoplus {
+    font-size: 21px;
+    margin-right: 5px;
+}
+
+
+.filter-night{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(233deg) brightness(108%) contrast(102%);
+}
+
+.filter-day{
+    filter: invert(26%) sepia(34%) saturate(5913%) hue-rotate(176deg) brightness(97%) contrast(91%);
+}
+
+
+@media screen and (max-width: 768px){
+    .exit{   
+        left: 3%; 
+    }
+    .bklink{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1123px){
+    .bklink{
+        margin-left: 3%;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+    .middle{
+
+        top: 14%;
+        
+    }
+    .exit{
+        
+        position: absolute;
+        left: 1%;
+        margin-top: 0;
+        
+    }
+    
+}
+

@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+::-webkit-scrollbar{
+  width: 7px;
+  background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(10, 83, 118);
+  border-radius: 4px;
+}
+

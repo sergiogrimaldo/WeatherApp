@@ -1,0 +1,59 @@
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 3.5%;
+  white-space: nowrap;
+  position: absolute;
+  width: 100%;
+  position: relative;
+  align-content: space-around;
+  flex-flow: row wrap;
+  padding: .8%;
+}
+
+.flecha{
+  position: absolute;
+  width: 120px;
+  top: 90%;
+  left: 90%;
+  display: none;
+}
+
+@keyframes slideDown {
+  from {
+  opacity: 0;
+  transform: translateY(-1rem);
+  }
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+.flecha {
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+  animation-fill-mode: both;
+  animation-name: slideDown;
+  animation-delay: 300ms;
+}
+
+
+
+@media screen and (max-width: 768px){
+  .cards {
+    display: none
+  }
+  .flecha{
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .cartamobile{ 
+    position: absolute;
+    top: 14%;
+  }
+
+}

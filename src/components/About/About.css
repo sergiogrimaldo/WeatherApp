@@ -1,0 +1,325 @@
+.picture-shadow,
+.picture-image {
+display: block;
+height: 100%;
+left: 0;
+top: 0;
+width: 100%;
+}
+.picture {
+    padding-top: 100%;
+    position: relative;
+    width: 100%;
+}
+.picture-shadow {
+    border-radius: 100000px;
+    background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 68%);
+    position: absolute;
+    top: 10%;
+}
+.picture-image {
+    border-radius: 100000px;
+    position: absolute;
+}
+
+.allabout{
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    min-height: 100vh;
+    min-width: 300px;
+    overflow-x: hidden;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: #0772ff3d;
+}
+
+.nameabt {
+    font-size: 2.25rem;
+    line-height: 1.125;
+    margin-bottom: 0.5rem;
+}
+.jobabt {
+font-family: "Montserrat", "Quicksand", sans-serif;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+}
+.jobabt {
+    color: #0773ff;
+    font-size: 0.75rem;
+}
+.hrnashe {
+    background-color: #01f7eb;
+    border: none;
+    content: "";
+    height: 1px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    transform-origin: center left;
+    width: 4rem;
+}
+
+.contentabt {
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+}
+.sideabt {
+    max-height: 20rem;
+    max-width: 20rem;
+}
+.aboutabt {
+    max-width: 26rem;
+}
+
+.descriptionabt {
+    font-size: 1.05rem;
+    text-align: left;
+}
+
+
+.contactabt {
+    display: absolute;
+    vertical-align: top;
+    margin-left: 31.5%;
+    margin-bottom: 10%;
+}
+
+.social a {
+    transform-origin: center;
+    transition-duration: 100ms;
+}
+.social {
+    display: flex;
+    margin-top: 1.5rem;
+}
+.social li {
+    height: 2rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    width: 2rem;
+}
+.social a {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    height: 2rem;
+    justify-content: center;
+    width: 2rem;
+    opacity: 0.5;
+    transition-property: opacity, transform;
+    will-change: opacity, transform;
+}
+
+.social a.hover {
+    opacity: 1;
+    transform: scale(1.25);
+}
+.social a.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+/* ANIMACIONES */
+
+@keyframes fillUp {
+    from {
+    transform: scaleX(0);
+    }
+    to {
+    transform: scaleX(1);
+    }
+}
+@keyframes picImage {
+    from {
+    opacity: 0;
+    transform: scale(1.2) translateY(-1rem);
+    }
+    to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    }
+}
+@keyframes picShadow {
+    from {
+    opacity: 0;
+    transform: scale(1.2) translateY(4rem);
+    }
+    to {
+    opacity: 1;
+    transform: scale(1.1) translateY(0);
+    }
+}
+@keyframes slideDown {
+    from {
+    opacity: 0;
+    transform: translateY(-1rem);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+@keyframes slideUp {
+    from {
+    opacity: 0;
+    transform: translateY(1rem);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+@keyframes zoomOut {
+    from {
+    opacity: 0;
+    transform: scale(1.05);
+    }
+    to {
+    opacity: 0.2;
+    transform: scale(1);
+    }
+}
+
+.picture-shadow,
+.picture-image,
+.nameabt,
+.jobabt,
+.hrnashe,
+.descriptionabt,
+.contactabt,
+.social li {
+animation-duration: 1s;
+animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+animation-fill-mode: both;
+}
+
+.picture-shadow,
+.picture-image {
+animation-duration: 750ms;
+animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
+}
+
+.picture-shadow {
+    animation-name: picShadow;
+ }
+.picture-image {
+    animation-name: picImage;
+ }
+ .nameabt {
+    animation-name: slideDown;
+}
+.jobabt {
+    animation-name: slideUp;
+}
+.hrnashe {
+    animation-name: fillUp;
+}
+.descriptionabt {
+    animation-name: slideUp;
+}
+.social li {
+    animation-duration: 500ms;
+    animation-name: slideUp;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
+}
+
+.nameabt {
+    animation-delay: 100ms;
+}
+.jobabt {
+    animation-delay: 200ms;
+}
+.hrnashe {
+    animation-delay: 300ms;
+}
+.descriptionabt {
+    animation-delay: 600ms;
+}
+.picture-image {
+    animation-delay: 500ms;
+}
+.picture-shadow {
+    animation-delay: 600ms;
+}
+.social li:nth-child(1) {
+    animation-delay: 400ms;
+}
+.social li:nth-child(2) {
+    animation-delay: 600ms;
+}
+
+@media screen and (min-width: 800px) {
+    .contentabt {
+        align-items: center;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        padding: 4rem;
+    }
+    .sideabt {
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 20rem;
+        margin-left: 4rem;
+        order: 2;
+        width: 20rem;
+    }
+    .aboutabt {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .contentabt {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 3rem;
+    }
+    .sideabt {
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+
+    .nameabt {
+        animation-delay: 400ms;
+    }
+    .jobabt {
+        animation-delay: 500ms;
+    }
+    .hrnashe {
+        animation-delay: 600ms;
+    }
+    .descriptionabt {
+        animation-delay: 700ms;
+    }
+    .picture-image {
+        animation-delay: 600ms;
+    }
+    .picture-shadow {
+        animation-delay: 700ms;
+    }
+    .social li:nth-child(1) {
+        animation-delay: 700ms;
+    }
+    .social li:nth-child(2) {
+        animation-delay: 900ms;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .nameabt {
+        font-size: 1.85rem;
+        line-height: 1.15;
+        margin-bottom: 0.5rem;
+    }
+    .contactabt {
+        display: absolute;
+        margin-left: 24%;
+        margin-bottom: 10%;
+    }
+}

@@ -1,0 +1,118 @@
+.carta {
+    height: 520px;
+    width: 358px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: [x0] 20px [x1] 1fr [x2] 20px [x3];
+    grid-template-rows: [y0] 30px [y1] 190px [y2] 210px [y3] 1fr [y4] 100px [y5] 1fr [y6];
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 8px 8px 24px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(0,0,0,0.55);
+  }
+  
+  .carta-title {
+    margin-bottom: 15px;
+  }
+  
+  #closeeIcon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4px;
+    margin-top: 4px;
+  }
+  .btn-card{
+    border-radius: 12px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .carta-body {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+  }
+
+  /* grid  */
+ #closeeIcon{
+  grid-column: x2 / x3;
+  grid-row: y0 / y1;
+  z-index: 2;
+ }
+
+  .iconoP{
+    grid-column: x0 / x3;
+    grid-row: y0 / y2;
+  }
+
+  .cityinfo{
+    grid-column: x0 / x3;
+    grid-row: y2 / y3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: grid;
+    grid-template-rows: [y0] 1fr [y1] 60px [y2];
+    grid-template-columns: [x0] 1fr [x1];
+    position: relative;
+  }
+
+  .tempP {
+    font-family:'Bebas Neue', cursive;
+    font-size: 68px;
+    position: absolute;
+    left: 118px;
+    top: 30px;
+  }
+
+  .temperaturaP {
+    grid-row: y0/y1;
+  }
+
+  .cityfecha{
+    grid-row: y1/y2;
+  }
+
+  .card-titleP {
+    margin-top: 0px;
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s linear;
+  }
+  .card-titleP.hover {
+    transform: scale(1.2);
+    filter: invert(10%) brightness(110%);
+  }
+
+  .fecha{
+    font-family: 'Poppins', sans-serif
+  }
+
+  .infoP{
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: space-around; 
+    align-items: flex-end;
+    grid-column: x0 / x3;
+    grid-row: y4 / y5;
+    align-self: center;
+  }
+  
+  /* INFO STYLES */
+  .espacP{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2mm;
+  }
+  
+  .infoinfoP {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+  }
+  
+  .textoinfoP {
+    font-size: 15px;
+  }
