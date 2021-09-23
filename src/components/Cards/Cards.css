@@ -31,22 +31,9 @@
   }
 }
 
-.flecha {
-  animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
-  animation-fill-mode: both;
-  animation-name: slideDown;
-  animation-delay: 300ms;
-}
-
-
-
 @media screen and (max-width: 768px){
   .cards {
     display: none
-  }
-  .flecha{
-    display: none !important;
   }
 }
 

@@ -1,7 +1,7 @@
 
 .navbar{
     height: 10vh;
-    background-color: rgba(54, 140, 169, 1);
+    background-color: rgba(24, 30, 211, 0.494);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: rgb(9, 85, 143);
     transition: 0.1s linear;
     opacity: 0.7;
 }
@@ -66,7 +66,7 @@
 }
 
 .nav-links li{
-    color: rgb(255, 255, 255);
+    color: rgb(250, 233, 0);
     text-decoration: none;
     font-size: 16px;
     font-family: sans-serif;
@@ -102,7 +102,7 @@
         top: 0px;
         list-style: none;
         display: flex;
-        background-color: rgba(54, 140, 169, 1);
+        background-color: rgba(13, 55, 133, 0.522);
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -166,7 +166,7 @@
         top: 0px;
         list-style: none;
         display: flex;
-        background-color: rgba(54, 140, 169, 1);
+        background-color: rgba(54, 140, 169, 0.056);
         height: 100vh;
         width: 100%;
         flex-direction: column;

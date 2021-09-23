@@ -7,7 +7,7 @@ import './Cards.css';
 import '../container.css';
 import "animate.css";
 import '../Intropage.css';
-import d11 from '../images/icons/11d.svg';
+import fdias from '../images/icons/02d.svg';
 import arrow from '../images/icons/down-arrow.svg';
 
 
@@ -32,7 +32,7 @@ export default function Cards({cities, onClose}) {
     return (
     <div className='container'>
 
-        <div><img src={`${arrow}`} className='flecha' ref={flecha} style={{ width: '45px' }} alt='arrow' /></div>
+        
         <div className='cartamobile'>
           <CartaP 
             name={cities[0].name}
@@ -66,8 +66,8 @@ export default function Cards({cities, onClose}) {
   } else {
     return(
       <div className='intropage'> 
-        <img src={`${d11}`} alt='sun' />
-        <p className='intromsg'> No cities yet</p>
+        <img src={`${fdias}`} alt='sun' />
+        <p className='intromsg'> No Cities Added</p>
       </div>
     )
   }

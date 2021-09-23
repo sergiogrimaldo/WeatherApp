@@ -1,11 +1,10 @@
-
-
 .intropage{
     display: flex;
     flex-flow: column;
     max-width: 1fr;
     justify-content: flex-start;
     align-items: center;
+    height:800px;
 }
 
 .intromsg{

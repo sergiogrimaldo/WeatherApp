@@ -46,11 +46,11 @@ letter-spacing: 0.3em;
 text-transform: uppercase;
 }
 .jobabt {
-    color: #0773ff;
+    background-color: rgba(84, 199, 220, 0.522);
     font-size: 0.75rem;
 }
 .hrnashe {
-    background-color: #01f7eb;
+    background-color: rgba(84, 199, 220, 0.522);
     border: none;
     content: "";
     height: 1px;
